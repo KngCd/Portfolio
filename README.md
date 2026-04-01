@@ -94,5 +94,5 @@ Steps:
 
 ## ✨ Author
 
-**Your Name**
-Aspiring Developer 🚀
+**King Cedrick Panaligan**
+Aspiring IT Professional 🚀
