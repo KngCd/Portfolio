@@ -20,8 +20,8 @@ export function Education() {
       Icon: GraduationCap,
     },
     {
-      school: 'Alitastag Senior High School',
-      location: 'Poblacion East, Alitastag, Batangas',
+      school: 'Alitagtag Senior High School',
+      location: 'Poblacion East, Alitagtag, Batangas',
       strand: 'Science, Technology, Engineering, and Mathematics (STEM)',
       description:
         'An early chapter that built discipline in STEM thinking and a deeper curiosity for technology.',
