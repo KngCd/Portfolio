@@ -7,7 +7,7 @@ This project highlights my skills, projects, and experience as a developer.
 
 ## 🚀 Live Demo
 
-🔗 https://your-portfolio-link.vercel.app
+🔗 https://king-cedrick-portfolio.vercel.app/
 
 ---
 
@@ -55,8 +55,8 @@ portfolio/
 Clone the repository:
 
 ```bash
-git clone https://github.com/KngCd/your-repo.git
-cd your-repo
+git clone https://github.com/KngCd/Portfolio
+cd Portfolio
 ```
 
 Install dependencies:
