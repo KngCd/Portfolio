@@ -43,7 +43,7 @@ export function Hero() {
               transition={{ delay: 0.4 }}
               className="text-sm md:text-base text-zinc-600 dark:text-zinc-400 tracking-wider uppercase"
             >
-              Hello, I'm
+              Hello, I'mmmmm
             </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
