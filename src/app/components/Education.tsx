@@ -63,7 +63,7 @@ export function Education() {
               className="relative pl-10 sm:pl-14 pb-10 last:pb-0"
             >
               {/* Timeline node */}
-              <div className="absolute left-4 sm:left-6 top-1/2 -translate-y-1/2 -translate-x-1/2">
+              <div className="absolute left-4 sm:left-6 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10">
                 <div className="h-3 w-3 rounded-full bg-white dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-700" />
               </div>
 

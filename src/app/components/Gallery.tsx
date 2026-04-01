@@ -32,6 +32,10 @@ export function Gallery() {
     { src: '/assets/four.jpg', alt: 'Gallery Image 4' },
     { src: '/assets/five.jpg', alt: 'Gallery Image 5' },
     { src: '/assets/six.jpg', alt: 'Gallery Image 6' },
+    { src: '/assets/seven.jpeg', alt: 'Gallery Image 7' },
+    { src: '/assets/eight.png', alt: 'Gallery Image 8' },
+    { src: '/assets/nine.jpg', alt: 'Gallery Image 9' },
+    { src: '/assets/ten.jpg', alt: 'Gallery Image 10' },
   ];
 
   return (
