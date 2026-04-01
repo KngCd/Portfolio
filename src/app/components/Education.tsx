@@ -26,6 +26,7 @@ export function Education() {
       description:
         'An early chapter that built discipline in STEM thinking and a deeper curiosity for technology.',
       period: 'July 7, 2022',
+      achievement: "Graduated with honors, recognized for academic excellence",
       Icon: GraduationCap,
     },
   ];
