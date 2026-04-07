@@ -17,7 +17,7 @@ export function Projects() {
         'Implemented user-friendly interfaces for expense categorization and financial reporting.',
         'Conducted thorough testing throughout development to ensure reliability and performance.',
       ],
-      tools: ['React', 'Node.js', 'Express.js', 'PostgreSQL'],
+      tools: ['React', 'Node.js', 'Express.js', 'MySQL'],
       githubUrl: 'https://github.com/KngCd/Kubo-Ware',
       date: '2026',
       videoSrc: '/assets/videos/Ledgerly.mp4',
