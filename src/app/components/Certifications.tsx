@@ -9,7 +9,7 @@ export function Certifications() {
 
   const certifications = [
     {
-      title: 'Information Technology Passport (IP) Certification',
+      title: 'Philnits Information Technology Passport (IP) Certification',
       date: 'October 2025',
       certificateNo: 'IP4500306',
       description:
