@@ -9,6 +9,12 @@ export function Certifications() {
 
   const certifications = [
     {
+      title: 'Cisco Networking Academy — Networking Devices and Basic Configuration',
+      date: 'April 2026',
+      description:
+        'A course completion credential focused on foundational networking concepts and hands-on device configuration through Cisco Networking Academy.',
+    },
+    {
       title: 'PhilNITS Information Technology Passport (IP) Certification',
       date: 'October 2025',
       certificateNo: 'IP4500306',
@@ -47,7 +53,7 @@ export function Certifications() {
       <div className="space-y-6">
         {certifications.map((cert, index) => (
           <motion.div
-            key={cert.certificateNo}
+            key={cert.certificateNo ?? cert.title}
             initial={{ opacity: 0, scale: 0.9 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
@@ -73,12 +79,14 @@ export function Certifications() {
                   )}
                 </div>
 
-                <p className="text-zinc-600 dark:text-zinc-400">
-                  Certificate No:{' '}
-                  <span className="font-mono text-zinc-800 dark:text-zinc-200 bg-zinc-200 dark:bg-zinc-800 px-2 py-1 rounded">
-                    {cert.certificateNo}
-                  </span>
-                </p>
+                {cert.certificateNo && (
+                  <p className="text-zinc-600 dark:text-zinc-400">
+                    Certificate No:{' '}
+                    <span className="font-mono text-zinc-800 dark:text-zinc-200 bg-zinc-200 dark:bg-zinc-800 px-2 py-1 rounded">
+                      {cert.certificateNo}
+                    </span>
+                  </p>
+                )}
                 <p className="text-sm text-zinc-500 dark:text-zinc-500 leading-relaxed">
                   {cert.description}
                 </p>
