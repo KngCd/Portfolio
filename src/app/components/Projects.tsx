@@ -49,7 +49,7 @@ export function Projects() {
         'Conducted manual testing to ensure feature consistency and smooth integration with the existing system.',
       ],
       tools: ['Flutter', 'Tailwind', 'JavaScript', 'PHP', 'MySQL'],
-      githubUrl: 'https://github.com/KngCd/Kubo-Ware',
+      githubUrl: 'https://github.com/KngCd/responsys',
       date: 'July 2025',
       videoSrc: '/assets/videos/ResponSys-Mobile.mp4',
     },
