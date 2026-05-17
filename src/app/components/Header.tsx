@@ -20,6 +20,15 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState<(typeof NAV_ITEMS)[number]['id']>('home');
 
+  const getScrollOffset = () => {
+    const headerBar = document.querySelector<HTMLElement>('[data-header-bar="true"]');
+    const headerHeight =
+      headerBar?.getBoundingClientRect().height ??
+      document.querySelector('header')?.getBoundingClientRect().height ??
+      0;
+    return headerHeight + 24;
+  };
+
   const updateThemeAssets = (dark: boolean) => {
     const favicon = document.querySelector<HTMLLinkElement>('#favicon');
     const appleTouch = document.querySelector<HTMLLinkElement>('#apple-touch-icon');
@@ -54,9 +63,7 @@ export function Header() {
     let ticking = false;
 
     const computeActiveSection = () => {
-      const headerHeight =
-        document.querySelector('header')?.getBoundingClientRect().height ?? 0;
-      const offset = headerHeight + 24;
+      const offset = getScrollOffset();
 
       const sections = NAV_ITEMS
         .map((item) => {
@@ -114,11 +121,26 @@ export function Header() {
     updateThemeAssets(next);
   };
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: 'smooth' });
-    setIsMenuOpen(false);
-    setActiveSection(id as (typeof NAV_ITEMS)[number]['id']);
+  const scrollToSection = (id: (typeof NAV_ITEMS)[number]['id']) => {
+    const doScroll = () => {
+      const element = document.getElementById(id);
+      if (!element) return;
+
+      const offset = getScrollOffset();
+      const top =
+        element.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    };
+
+    setActiveSection(id);
+
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+      requestAnimationFrame(() => requestAnimationFrame(doScroll));
+      return;
+    }
+
+    doScroll();
   };
 
   return (
@@ -132,7 +154,10 @@ export function Header() {
           : 'bg-white/80 dark:bg-zinc-900/60 backdrop-blur-sm'
       } border-b border-zinc-200 dark:border-zinc-800`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-4 flex items-center justify-between">
+      <div
+        data-header-bar="true"
+        className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-4 flex items-center justify-between"
+      >
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
