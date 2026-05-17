@@ -9,6 +9,12 @@ export function Certifications() {
 
   const certifications = [
     {
+      title: 'Cisco Networking Academy — Network Support and Security',
+      date: 'April 2026',
+      description:
+        'A course completion credential focused on troubleshooting methodologies, help desk best practices, common threats, and configuring secure user access on a network.',
+    },
+    {
       title: 'Cisco Networking Academy — Networking Devices and Basic Configuration',
       date: 'April 2026',
       description:
