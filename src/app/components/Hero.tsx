@@ -157,8 +157,8 @@ export function Hero() {
             transition={{ delay: 0.7 }}
             className="text-base md:text-lg text-zinc-700 dark:text-zinc-300 max-w-2xl leading-relaxed"
           >
-            Passionate about building elegant solutions to complex problems. Specializing in full-stack development, 
-            I create responsive web applications and systems that blend form with function.
+            Passionate about building and improving technology solutions that enhance user experiences and operational efficiency. 
+            Driven by curiosity, adaptability, and a commitment to learning new tools and technologies in an ever-evolving IT landscape.
           </motion.p>
 
           {/* CTA Buttons */}
