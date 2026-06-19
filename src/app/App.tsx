@@ -2,6 +2,7 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
+import { Experience } from './components/Experience';
 import { Education } from './components/Education';
 import { Gallery } from './components/Gallery';
 import { Certifications } from './components/Certifications';
@@ -20,6 +21,7 @@ export default function App() {
         </div>
         <Skills />
         <Projects />
+        <Experience />
         <Education />
         <Certifications />
         <Gallery />
