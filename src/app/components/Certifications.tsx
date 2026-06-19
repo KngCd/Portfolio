@@ -9,6 +9,12 @@ export function Certifications() {
 
   const certifications = [
     {
+      title: 'Google IT Support Professional Certificate',
+      date: 'June 2026',
+      description:
+        'A course completion credential covering troubleshooting methodologies, help desk best practices, common threats, configuring secure user access on a network, and practical hands-on labs for diagnosing and resolving common IT issues.',
+    },
+    {
       title: 'Cisco Networking Academy — Network Support and Security',
       date: 'April 2026',
       description:
