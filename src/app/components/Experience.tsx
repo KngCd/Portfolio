@@ -93,7 +93,7 @@ export function Experience() {
                     <p className="text-lg text-zinc-700 dark:text-zinc-300 font-semibold mb-2">
                       {exp.company}
                     </p>
-                    <div className="flex flex-col md:flex-row md:items-center gap-3 text-sm text-zinc-600 dark:text-zinc-400">
+                    <div className="flex flex-col items-start md:flex-row md:items-center gap-3 text-sm text-zinc-600 dark:text-zinc-400">
                       <div className="flex items-center gap-1">
                         <MapPin className="w-4 h-4" />
                         <span>{exp.location}</span>
@@ -102,7 +102,7 @@ export function Experience() {
                         <Calendar className="w-4 h-4" />
                         <span>{exp.period}</span>
                       </div>
-                      <span className="px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 text-xs font-semibold">
+                      <span className="self-start px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 text-xs font-semibold">
                         {exp.type}
                       </span>
                     </div>
