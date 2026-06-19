@@ -81,7 +81,7 @@ export function Projects() {
         initial={{ opacity: 0, y: -20 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
-        className="space-y-3 mb-12"
+        className="space-y-3 mb-10"
       >
         <motion.p
           className="text-sm md:text-base text-zinc-500 tracking-widest uppercase font-semibold"

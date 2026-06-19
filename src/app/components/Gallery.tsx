@@ -56,7 +56,7 @@ export function Gallery() {
         initial={{ opacity: 0, y: -20 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
-        className="space-y-3 mb-12"
+        className="space-y-3 mb-10"
       >
         <motion.p
           className="text-sm md:text-base text-zinc-500 tracking-widest uppercase font-semibold"
@@ -69,6 +69,15 @@ export function Gallery() {
           Gallery
         </motion.h2>
       </motion.div>
+
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.6, delay: 0.1 }}
+        className="-mt-4 mb-8 text-base md:text-lg text-zinc-600 dark:text-zinc-400 max-w-3xl leading-relaxed"
+      >
+        A few snapshots from my journey—moments that shaped how I learn, build, and grow.
+      </motion.p>
 
       <motion.div
         initial={{ opacity: 0, y: 60 }}
