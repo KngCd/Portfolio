@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;1,14..32,300&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+
+  --color-canvas-dark: #000000;
+  --color-card-dark: #0e0e0e;
+  --color-border-dark: #242424;
+  --color-canvas-light: #ffffff;
+  --color-card-light: #fafafa;
+  --color-border-light: #e5e5e5;
+
+  --radius-card: 16px;
+  --radius-pill: 100px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16.5px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* @media (max-width: 1280px) {
+  body {
+    font-size: 15.75px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 15.25px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14.5px;
+    line-height: 1.65;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::selection {
+  background: rgba(128, 128, 128, 0.3);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-code {
+  font-family: var(--font-mono);
+}
+
+@media (max-width: 768px) {
+  .font-display {
+    letter-spacing: -0.03em;
+  }
+
+  section h2 {
+    font-size: clamp(2.2rem, 8vw, 3.6rem) !important;
+  }
+
+  section p,
+  section li,
+  section a,
+  section span {
+    word-break: break-word;
+  }
+}
+
+button,
+a,
+img,
+video {
+  transition-property: color, background-color, border-color, opacity, box-shadow, transform, filter;
+  transition-duration: 0.45s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+a,
+img,
+video {
+  transition-property: color, background-color, border-color, opacity, box-shadow, transform, filter;
+  transition-duration: 0.45s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Smooth theme transition */
+.theme-transition,
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
+  transition: background-color 0.6s ease, border-color 0.6s ease, color 0.6s ease, box-shadow 0.6s ease, opacity 0.6s ease, transform 0.6s ease !important;
+}
+
+.hover-lift {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.dark .hover-lift:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
