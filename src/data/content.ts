@@ -167,20 +167,20 @@ export const educationData = [
 ];
 
 export const galleryImages = [
-  { id: 'workspace', src: '/assets/one.jpg', alt: 'Technical Support at St. Thomas Academy', h: 320 },
-  { id: 'team', src: '/assets/two.jpg', alt: 'Doing Marketing at schools in Balayan, Batangas', h: 420 },
-  { id: 'design', src: '/assets/three.JPG', alt: 'Collaborating with team members', h: 280 },
-  { id: 'screen', src: '/assets/four.jpg', alt: 'Hands-on mentoring session', h: 360 },
-  { id: 'study', src: '/assets/five.jpg', alt: 'Hands-on mentoring session', h: 300 },
-  { id: 'build', src: '/assets/six.jpg', alt: 'Hands-on mentoring session', h: 440 },
-  { id: 'seven', src: '/assets/seven.jpeg', alt: 'Provided infrastructure support at Ark Bess', h: 340 },
-  { id: 'eight', src: '/assets/eight.png', alt: 'Installing operating system', h: 300 },
-  { id: 'nine', src: '/assets/nine.jpg', alt: 'Collaborating with team members', h: 390 },
-  { id: 'ten', src: '/assets/ten.jpg', alt: 'Friend moments', h: 280 },
-  { id: 'eleven', src: '/assets/eleven.jpg', alt: 'Technical support at Kalayaan Christian School', h: 360 },
-  { id: 'twelve', src: '/assets/twelve.jpg', alt: 'Technical support at Sunhill Montessori Casa Rosario', h: 310 },
-  { id: 'thirteen', src: '/assets/thirteen.jpg', alt: 'Installing LAN connection', h: 420 },
-  { id: 'fourteen', src: '/assets/fourteen.jpg', alt: 'Last day at internship', h: 330 },
+  { id: 'technical-support-st-thomas', src: '/assets/one.jpg', alt: 'Providing technical support during my internship at St. Thomas Academy', h: 320 },
+  { id: 'school-marketing-balayan', src: '/assets/two.jpg', alt: 'Conducting school marketing activities in Balayan, Batangas during my internship', h: 420 },
+  { id: 'team-collaboration', src: '/assets/three.JPG', alt: 'Collaborating with my internship team', h: 280 },
+  { id: 'mentoring-session-1', src: '/assets/four.jpg', alt: 'Participating in a hands-on mentoring session', h: 360 },
+  { id: 'mentoring-session-2', src: '/assets/five.jpg', alt: 'Receiving guidance during a hands-on mentoring session', h: 300 },
+  { id: 'mentoring-session-3', src: '/assets/six.jpg', alt: 'Learning practical IT skills during a hands-on mentoring session', h: 440 },
+  { id: 'infrastructure-support-ark-bess', src: '/assets/seven.jpeg', alt: 'Providing IT infrastructure support during my internship at Ark Bess', h: 340 },
+  { id: 'operating-system-installation', src: '/assets/eight.png', alt: 'Installing an operating system', h: 300 },
+  { id: 'teamwork', src: '/assets/nine.jpg', alt: 'Working alongside my internship team', h: 390 },
+  { id: 'college-friends', src: '/assets/ten.jpg', alt: 'Sharing memorable moments with friends on campus', h: 280 },
+  { id: 'technical-support-kalayaan', src: '/assets/eleven.jpg', alt: 'Providing technical support during my internship at Kalayaan Christian School', h: 360 },
+  { id: 'technical-support-sunhill', src: '/assets/twelve.jpg', alt: 'Providing technical support during my internship at Sunhill Montessori Casa Rosario', h: 310 },
+  { id: 'lan-installation', src: '/assets/thirteen.jpg', alt: 'Installing a LAN connection', h: 420 },
+  { id: 'internship-completion', src: '/assets/fourteen.jpg', alt: 'Celebrating the final day of my internship', h: 330 },
 ];
 
 export const contactLinks = [
