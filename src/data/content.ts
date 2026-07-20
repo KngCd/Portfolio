@@ -1,7 +1,7 @@
 export const heroContent = {
   name: 'King Cedrick',
   surname: 'Panaligan',
-  title: 'Network Engineer • QA Specialist • IT Support Specialist',
+  title: 'Aspiring Network Engineer • QA Specialist • IT Support Specialist',
   description: 'Passionate about building efficient, user-focused technology solutions with a curious, adaptable, and continuous learning mindset.',
   availability: 'Available for work',
 };
